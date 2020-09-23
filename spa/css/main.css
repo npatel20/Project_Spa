@@ -1,2 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ruthie&display=swap");
+* {
+  box-sizing: border-box; }
+
 body {
-  background-color: blueviolet; }
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  margin: 0;
+  line-height: 1.5; }
+
+h1 {
+  margin: 0; }
+
+.text-secondary {
+  font-family: "Ruthie", cursive; }
+
+nav {
+  height: 10vh; }
+  nav .brand-name {
+    color: #ed557b;
+    padding: 0.6em 0 0 0.6em; }
+
+header {
+  height: 100vh;
+  background-image: url(/spa/images/bg_logom.jpg);
+  background-position: left;
+  background-size: 65%;
+  background-repeat: no-repeat; }
+  header main {
+    height: 95vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    header main h1 {
+      color: #ed557b;
+      font-size: 2.8rem;
+      font-family: "Rubik", sans-serif; }
+    header main p {
+      position: absolute;
+      left: 80px;
+      top: 705px;
+      color: #a9a5a5;
+      font-size: 2rem; }
+      header main p span {
+        color: #ed557b;
+        font-size: 2.8rem;
+        font-weight: 600; }
