@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ruthie&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.text-secondary {
+  font-family: "Ruthie", cursive;
+  color: #ed557b;
+}
+
+header {
+  height: 100vh;
+}
+
+nav .brand-name {
+  color: #ed557b;
+  padding: 0.6em 0 0 0.6em;
+}
+
+.menu-btn {
+  position: absolute;
+  right: 1.9rem;
+  top: 1.9rem;
+  cursor: pointer;
+}
+
+.menu-btn .btn-line {
+  width: 1.5rem;
+  height: 0.1rem;
+  margin: 0 0 5px 0;
+  background: #000;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  place-items: center;
+  overflow: hidden;
+}
+
+main img {
+  width: 100%;
+  height: 85vh;
+}
+
+main .lg_heading {
+  font-size: clamp(2.8rem, 10vw, 10rem);
+  font-family: "Rubik", sans-serif;
+  color: #6a5d5d;
+}
+
+main p {
+  color: #a9a5a5;
+  font-size: clamp(1rem, 5vw, 5rem);
+  margin: 0px !important;
+}
+
+main span {
+  font-size: clamp(1.5rem, 5vw, 7rem);
+  font-weight: 600;
+  background: -webkit-gradient(linear, left top, right top, from(#f16c8c), to(#40e0d0c2));
+  background: linear-gradient(to right, #f16c8c, #40e0d0c2);
+  background-clip: border-box;
+}
+
+.services {
+  height: 100vh;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services h2 {
+  text-align: center;
+}
+
+.services .curve_head {
+  letter-spacing: 1rem;
+  font-size: 5rem;
+}
+
+.services .pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.services .accordion:hover .accordion-item:hover .accordion-item-content,
+.services .accordion .accordion-item--default .accordion-item-content {
+  height: 6em;
+}
+
+.services .accordion-item-content,
+.services .accordion:hover .accordion-item-content {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.25s;
+  transition: height 0.25s;
+}
+
+.services .columns_pricing {
+  width: 20%;
+}
+
+.services h3 {
+  color: #6a5d5d;
+  text-align: center;
+  text-transform: lowercase;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.services ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.services li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2px;
+  margin: 0.8rem;
+  list-style: none;
+  border-radius: 5px;
+  text-transform: lowercase;
+  -webkit-box-shadow: 0 7px 10px #a19c9d6b;
+          box-shadow: 0 7px 10px #a19c9d6b;
+}
+
+.services li:hover {
+  background-color: #55e8ed;
+}
+
+.services span {
+  color: #6a5d5d;
+}
+/*# sourceMappingURL=main.css.map */
