@@ -103,8 +103,8 @@ main {
     // optional gradient
     background: linear-gradient(to right, #f16c8c, #40e0d0c2);
     background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
   }
 }
 
@@ -178,6 +178,18 @@ main {
     justify-content: space-evenly;
   }
 
+  .accordion:hover .accordion-item:hover .accordion-item-content,
+  .accordion .accordion-item--default .accordion-item-content {
+    height: 6em;
+  }
+
+  .accordion-item-content,
+  .accordion:hover .accordion-item-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.25s;
+  }
+
   .columns_pricing {
     width: 20%;
   }
@@ -213,6 +225,10 @@ main {
 
     // box-shadow: 0 7px 10px #f073926b;
     box-shadow: 0 7px 10px #a19c9d6b;
+  }
+
+  li:hover {
+    background-color: #55e8ed;
   }
 
   span {

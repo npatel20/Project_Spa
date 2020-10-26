@@ -61,9 +61,7 @@ main {
     font-size: clamp(1.5rem, 5vw, 7rem);
     font-weight: 600;
     background: linear-gradient(to right, #f16c8c, #40e0d0c2);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    background-clip: border-box; }
 
 .services {
   height: 100vh;
@@ -79,6 +77,14 @@ main {
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly; }
+  .services .accordion:hover .accordion-item:hover .accordion-item-content,
+  .services .accordion .accordion-item--default .accordion-item-content {
+    height: 6em; }
+  .services .accordion-item-content,
+  .services .accordion:hover .accordion-item-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.25s; }
   .services .columns_pricing {
     width: 20%; }
   .services h3 {
@@ -100,5 +106,7 @@ main {
     border-radius: 5px;
     text-transform: lowercase;
     box-shadow: 0 7px 10px #a19c9d6b; }
+  .services li:hover {
+    background-color: #ed557b; }
   .services span {
     color: #6a5d5d; }
