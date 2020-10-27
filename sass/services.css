@@ -1,0 +1,17 @@
+.services {
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services h2 {
+  margin: auto;
+}
+
+.services .curve_head {
+  letter-spacing: 0.5rem;
+  font-size: 5rem;
+}
+/*# sourceMappingURL=services.css.map */
