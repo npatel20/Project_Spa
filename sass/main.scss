@@ -37,23 +37,20 @@ header {
   height: 100vh;
 }
 
-nav {
-  .brand-name {
-    color: $text-primary;
-    padding: 0.6em 0 0 0.6em;
-  }
-}
-
 main {
   height: 90vh;
   // border: 5px solid black;
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
+
+  .content {
+    margin-left: 40%;
+  }
 
   .lg_heading {
-    font-size: clamp(2.8rem, 10vw, 5rem);
+    font-size: clamp(2.8rem, 10vw, 3rem);
     font-family: "Rubik", sans-serif;
     // color: $text-primary;
 
@@ -67,8 +64,9 @@ main {
 
   p {
     color: $text-secondary;
-    font-size: clamp(1rem, 5vw, 5rem);
+    font-size: clamp(1rem, 5vw, 2rem);
     margin: 0px !important;
+    letter-spacing: 0.5rem;
   }
 
   span {
@@ -77,8 +75,8 @@ main {
     font-weight: 600;
 
     // optional gradient
-    background: linear-gradient(to right, #f16c8c, #40e0d0c2);
-    background-clip: border-box;
+    // background: linear-gradient(to right, #f16c8c, #40e0d0c2);
+    // background-clip: border-box;
     // -webkit-background-clip: text;
     // -webkit-text-fill-color: transparent;
   }

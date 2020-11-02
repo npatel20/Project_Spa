@@ -7,16 +7,8 @@
   cursor: pointer;
 }
 
-.menu-btn .btn-line1 {
+.menu-btn .btn-line {
   width: 1rem;
-  height: 0.2rem;
-  margin: 0 0 5px 0;
-  background: #e81346;
-  border-radius: 30%;
-}
-
-.menu-btn .btn-line2 {
-  width: 1.5rem;
   height: 0.2rem;
   margin: 0 0 5px 0;
   background: #e81346;
@@ -59,18 +51,12 @@ nav {
 }
 
 .services h2 {
-  text-align: center;
+  margin: auto;
 }
 
 .services .curve_head {
   letter-spacing: 0.5rem;
   font-size: 5rem;
-}
-
-.services .services-nav {
-  background-color: #e76f51;
-  width: 20%;
-  height: 50vh;
 }
 
 * {
@@ -99,11 +85,6 @@ header {
   height: 100vh;
 }
 
-nav .brand-name {
-  color: #ed557b;
-  padding: 0.6em 0 0 0.6em;
-}
-
 main {
   height: 90vh;
   overflow: hidden;
@@ -113,28 +94,30 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .content {
+  margin-left: 40%;
 }
 
 main .lg_heading {
-  font-size: clamp(2.8rem, 10vw, 5rem);
+  font-size: clamp(2.8rem, 10vw, 3rem);
   font-family: "Rubik", sans-serif;
   color: #6a5d5d;
 }
 
 main p {
   color: #a9a5a5;
-  font-size: clamp(1rem, 5vw, 5rem);
+  font-size: clamp(1rem, 5vw, 2rem);
   margin: 0px !important;
+  letter-spacing: 0.5rem;
 }
 
 main span {
   font-size: clamp(1.5rem, 5vw, 7rem);
   font-weight: 600;
-  background: -webkit-gradient(linear, left top, right top, from(#f16c8c), to(#40e0d0c2));
-  background: linear-gradient(to right, #f16c8c, #40e0d0c2);
-  background-clip: border-box;
 }
 /*# sourceMappingURL=main.css.map */

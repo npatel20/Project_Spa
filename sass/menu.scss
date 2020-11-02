@@ -1,49 +1,14 @@
-// Menu Button
-.menu-btn {
-  position: absolute;
-  right: 1.9rem;
-  top: 1.9rem;
-  cursor: pointer;
+$text-primary: #ed557b;
+$text-secondary: #a9a5a5;
 
-  .btn-line1 {
-    width: 1rem;
-    height: 0.2rem;
-    margin: 0 0 5px 0;
-    background: #e81346;
-    border-radius: 30%;
-  }
-
-  .btn-line2 {
-    width: 1.5rem;
-    height: 0.2rem;
-    margin: 0 0 5px 0;
-    background: #e81346;
-    border-radius: 30%;
-  }
-
-  //   rotate into X
-
-  &.close {
-    transform: rotate(180deg);
-  }
-
-  .btn-line1 {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .btn-line2 {
-    transform: rotate(-45deg) translate(6px, 6px);
-  }
-}
-
+// navbar
 nav {
-  height: 10vh;
-}
-// menu overlay
-.menu-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  opacity: 0.9;
-  visibility: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+
+  .brand-name {
+    color: $text-primary;
+  }
 }
