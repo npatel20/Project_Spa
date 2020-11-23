@@ -1,0 +1,18 @@
+$text-primary: #ed557b;
+$text-secondary: #a9a5a5;
+
+.about_us {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        color: $text-primary;
+    }
+
+    p {
+        font-size: 20px;
+        margin: 0 20rem;
+    }
+}

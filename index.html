@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="sass/main.css" />
-    <title>shilpa's threading & spa</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#home" class="brand-name">Shilpa's Threading & Spa</a>
-        <div class="menu-toggle">
-          <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="sass/main.css" />
+  <title>shilpa's threading & spa</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#home" class="brand-name">Shilpa's Threading & Spa</a>
+      <div class="menu-toggle">
+
+        <!-- modal -->
+        <div class="modal" id="modal-one" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-header">
+              <h1>how are we handeling the pandemic</h1>
+              <a href="#modal-one" class="modal-close" aria-hidden="true">X</a>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, ratione?</p>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
           </div>
         </div>
-      </nav>
+        <div class="wrap">
+          <button>covid-19</button>
+          <button>          <i class="gg-menu-right-alt"></i>
+          </button>
+        </div>
+        <!-- modal ends here -->
+        
+        <!-- <div class="menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </div>
+      </div> -->
+    </nav>
 
-      <!-- <nav class="menu">
+    <!-- <nav class="menu">
         <div class="menu-btn">
           <div class="btn-line"></div>
           <div class="btn-line"></div>
@@ -41,108 +64,100 @@
         </ul>
       </nav> -->
 
-      <main>
-        <!-- <div>
+    <main>
+      <!-- <div>
             <img class="img" src="/spa/images/bg_logo1.png" alt="logo" />
           </div> -->
-        <div class="content">
-          <h1 class="lg_heading" id="main_title">
-            waxing <br />
-            facials <br />
-            threading
-          </h1>
-          <p class="sm_heading">
-            a place to <span class="text-secondary">rejuvenate</span>
-          </p>
-        </div>
-      </main>
-    </header>
-
-    <!-- Section 2 starts here -->
-    <section class="services">
-      <div>
-        <h2 class="text-secondary curve_head">prices & services</h2>
-        <!-- <h2>services</h2> -->
+      <div class="content">
+        <p class="sm_heading">
+          a place to <span class="text-secondary">rejuvenate</span>
+        </p>
+        <h1 class="lg_heading" id="main_title">
+          threading <br />
+          waxing <br />
+          facials
+        </h1>
+        
       </div>
 
-      <!-- Threading -->
-      <div class="">
-        <ul class="vertical-nav">
-          <li class="service-list">threading</li>
-          <li class="service-list">waxing</li>
-          <li class="service-list">facials</li>
+      <div class="theme_options">
+        <div class="white"></div>
+        <div class="dark"></div>
+        <div class="pretty_pink"></div>
+        <div class="turquoise"></div>
+      </div>
+    </main>
+  </header>
+
+  <!-- Section 2 starts here -->
+  <section class="services">
+    <h2 class="text-secondary curve_head">prices & services</h2>
+
+    <!-- Threading -->
+    <div class="pricing">
+      <div class="col-1">
+        <h3>threading</h3>
+        <ul class="to_grid">
+          <li>eyebrow <span>$12</span></li>
+          <li>upper lip <span>$5</span></li>
+          <li>lower lip <span>$5</span></li>
+          <li>chin <span>$5+</span></li>
+          <li>full face <span>$30</span></li>
         </ul>
       </div>
-      <!-- <div class="pricing">
-        <div class="columns_pricing">
-          <h3 class="text-secondary">Threading</h3>
 
-          <div class="accordion">
-            <ul class="accordion-item">
-              <li>Chin <span>$5+</span></li>
-              <div class="accordion-item-content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Itaque a illo excepturi ullam provident laboriosam cumque
-                  libero deleniti culpa corrupti.
-                </p>
-              </div>
-              <li>Side <span>$10</span></li>
-              <li>Upper Lip <span>$5</span></li>
-              <li>Full Face <span>$30</span></li>
-              <li>Forehead <span>$5</span></li>
-              <li>Eyebrows <span>$10</span></li>
-            </ul>
-          </div>
-        </div> -->
+      <div class="col-1">
+        <h3>waxing</h3>
+        <ul class="to_grid">
+          <li>Half Arms <span>$25</span></li>
+          <li>Full Arms <span>$30</span></li>
+          <li>Half Legs <span>$30</span></li>
+          <li>Full Legs <span>$40</span></li>
+          <li>Bikini <span>$20+</span></li>
+          <li>Full Back <span>$25</span></li>
+          <li>Brazillian <span>$45+</span></li>
+          <li>Under Arms <span>$15</span></li>
+          <li>Full Stomach <span>$25</span></li>
+        </ul>
+      </div>
 
-      <!-- Waxing -->
-      <!-- <div class="columns_pricing">
-          <h3 class="text-secondary">Waxing</h3>
-          <ul>
-            <li>Half Arms <span>$25</span></li>
-            <li>Full Arms <span>$30</span></li>
-            <li>Half Legs <span>$30</span></li>
-            <li>Full Legs <span>$40</span></li>
-            <li>Bikini <span>$20+</span></li>
-            <li>Full Back <span>$25</span></li>
-            <li>Brazillian <span>$45+</span></li>
-            <li>Under Arms <span>$15</span></li>
-            <li>Full Stomach <span>$25</span></li>
-          </ul>
-        </div> -->
+      <div class="col-1">
+        <h3>facials</h3>
+        <ul class="to_grid">
+          <li>Express <span>$35</span></li>
+          <li>Herbal <span>$50</span></li>
+          <li>Shahnaz(Gold, Pearl, Chocolate) <span>$60</span></li>
+          <li>Back Facial <span>$60</span></li>
+          <li>Vitamin C <span>$60</span></li>
+          <li>European <span>$60</span></li>
+          <li>Ezyme <span>$70</span></li>
+          <li>Glcolic <span>$80</span></li>
+          <li>Ultrasonic <span>$85</span></li>
+          <li>Collagen <span>$85</span></li>
+          <li>Face Bleach <span>$20</span></li>
+          <li>Fruit Facial <span>$70</span></li>
+        </ul>
+      </div>
+    </div>
 
-      <!-- Facials -->
-      <!-- <div class="columns_pricing">
-          <h3 class="text-secondary">Facials</h3>
+    <div class="timings">
+      <p>Monday - closed</p>
+      <p>Tuesday - Friday: 10:00am - 07:00pm</p>
+      <p>Saturday - Sunday: 10:00am - 05:00pm</p>
+    </div>
+  </section>
 
-          <div class="accordion">
-            <ul class="accordion-item">
-              <li>Express <span>$35</span></li>
-              <li>Herbal <span>$50</span></li>
-              <li>Shahnaz(Gold, Pearl, Chocolate) <span>$60</span></li>
-              <li>Back Facial <span>$60</span></li>
-              <li>Vitamin C <span>$60</span></li>
-              <li>European <span>$60</span></li>
-              <li>Ezyme <span>$70</span></li>
-              <li>Glcolic <span>$80</span></li>
-              <li>Ultrasonic <span>$85</span></li>
-              <li>Collagen <span>$85</span></li>
-              <li>Face Bleach <span>$20</span></li>
-              <li>Fruit Facial <span>$70</span></li>
-              <div class="accordion-item-content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Itaque a illo excepturi ullam provident laboriosam cumque
-                  libero deleniti culpa corrupti.
-                </p>
-              </div>
-            </ul>
-          </div>
-        </div>
-      </div> -->
-    </section>
+  <!-- about us section -->
+  <section class="about_us">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores necessitatibus fuga accusamus, a culpa magni magnam fugiat voluptate perferendis modi tenetur repellat veritatis, quidem ex nulla iure, pariatur dolor aliquid! Amet animi consequuntur, aliquam a deleniti ratione dignissimos expedita sapiente consequatur vitae eius, eaque modi ducimus molestias impedit id! Magni reprehenderit eveniet, ut illum labore molestiae amet odio assumenda? Doloribus eius laborum ipsum autem sed sunt eligendi dolores suscipit blanditiis repellendus! Laborum voluptatibus provident odio error magni veniam aliquid, enim assumenda unde explicabo omnis distinctio ex dignissimos ad, quasi nobis illo aliquam ratione aspernatur sint. Quos iusto sit veniam quisquam illo suscipit autem labore necessitatibus dolor aspernatur tempora debitis quia, earum minus? Architecto, eos? Nihil, maxime ratione nulla ea ipsa sit magnam facilis, hic debitis praesentium qui modi voluptates sint neque veniam nobis excepturi dignissimos placeat! Alias numquam aperiam hic eum tenetur officiis quia quidem. Fuga assumenda obcaecati dignissimos. Dolore magnam animi praesentium minima nobis suscipit quo sint similique molestiae ipsam tenetur, necessitatibus ducimus, qui iusto aperiam dignissimos itaque quod assumenda quia numquam esse doloribus, officiis amet. Veritatis natus quos exercitationem enim sapiente placeat eveniet sed cupiditate, sit harum nemo nesciunt eligendi sequi asperiores neque dignissimos non quia aperiam laboriosam.</p>
+  </section>
 
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+  <!-- Contact Section -->
+  <section class="contact_us">
+
+  </section>
+  <!-- <script src="js/main.js"></script> -->
+</body>
+
 </html>

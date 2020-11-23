@@ -1,17 +1,85 @@
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   height: 5vh;
 }
 
 nav .brand-name {
   color: #ed557b;
+  padding: 0 10px;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+nav button {
+  padding: 20px 20px;
+  border: none;
+  background: none;
+}
+
+nav .modal:target:before {
+  display: none;
+}
+
+nav .modal:before {
+  content: "";
+  display: block;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+nav .modal .modal-dialog {
+  background: #fefefe;
+  border: #333333 solid 1px;
+  border-radius: 5px;
+  margin-left: -200px;
+  position: fixed;
+  left: 50%;
+  z-index: 11;
+  width: 360px;
+  transform: translate(0, 0);
+  transition: transform 0.3s ease-out;
+  top: 20%;
+}
+
+nav .modal:target .modal-dialog {
+  top: -100%;
+  transform: translate(0, -500%);
+}
+
+nav .gg-menu-right-alt {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 14px;
+}
+
+nav .gg-menu-right-alt::after,
+nav .gg-menu-right-alt::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  display: block;
+  height: 2px;
+  border-radius: 4px;
+  background: currentColor;
+}
+
+nav .gg-menu-right-alt::before {
+  width: 16px;
+  box-shadow: 0 12px 0;
+}
+
+nav .gg-menu-right-alt::after {
+  width: 10px;
+  right: 0;
+  top: 6px;
 }
 /*# sourceMappingURL=menu.css.map */

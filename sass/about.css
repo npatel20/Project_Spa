@@ -1,0 +1,16 @@
+.about_us {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_us h2 {
+  color: #ed557b;
+}
+
+.about_us p {
+  font-size: 20px;
+  margin: 0 20rem;
+}
+/*# sourceMappingURL=about.css.map */

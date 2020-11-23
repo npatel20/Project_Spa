@@ -1,17 +1,60 @@
 .services {
   height: 100vh;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+}
+
+.services .pricing {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  margin-top: 2rem;
 }
 
 .services h2 {
-  margin: auto;
-}
-
-.services .curve_head {
+  text-align: center;
   letter-spacing: 0.5rem;
   font-size: 5rem;
+}
+
+.services ul, .services li {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services .col-1 {
+  width: 100%;
+}
+
+.services h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #a9a5a5;
+}
+
+.services ul {
+  padding: 2em 9em;
+  line-height: 2rem;
+}
+
+.services li {
+  margin-bottom: 0.5rem;
+  color: #000000;
+  font-size: 20PX;
+}
+
+.services span {
+  float: right;
+  color: #a9a5a5;
+}
+
+.services .timings {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.services .timings p {
+  font-size: 20px;
+  color: #a9a5a5;
 }
 /*# sourceMappingURL=services.css.map */
